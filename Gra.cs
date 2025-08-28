@@ -56,7 +56,7 @@ namespace Snake
 
 		private static void NowaNagroda()
 		{
-			if (start <= DateTime.Now.Subtract(TimeSpan.FromSeconds(refreshTimeNagrodyPoczatkowy)))
+			if (start <= DateTime.Now.Subtract(TimeSpan.FromSeconds(aktualnyRefreshTimeNagrody)))
 			{
 				nagroda.WyczyscNagrode();
 				start = DateTime.Now;
