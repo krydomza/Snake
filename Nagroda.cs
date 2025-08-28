@@ -14,7 +14,7 @@ namespace Snake
 		public Nagroda()
 		{
 			Random generator = new Random();
-			WartoscNagrody = generator.Next(1, 6); // 0 to kara, 1-5 to nagroda
+			WartoscNagrody = generator.Next(0, 6); // 0 to kara, 1-5 to nagroda
 			Pozycja.X = generator.Next(Plansza.minKolumna + 1, Plansza.maxKolumna - 2); // pozycja nagrody w poziomie
 			Pozycja.Y = generator.Next(Plansza.minWiersz + 1, Plansza.maxWiersz - 2); // pozycja nagrody w pionie
 		}
